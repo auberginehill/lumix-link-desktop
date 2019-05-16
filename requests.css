@@ -10,7 +10,10 @@ table {
 	position:left;
   }
 
-	
+a {
+	color: yellow;
+}
+
 #getset {
 	color: #FFF;
 	float:left;
@@ -31,6 +34,7 @@ table {
 	float:right;
 	padding-right:80;
 }
+
 #getsettings {
 	color: #FFF;
 }	
@@ -72,6 +76,7 @@ table {
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
+
 #clicker3 {
 	float:left;
     width: 50px;
@@ -122,6 +127,7 @@ table {
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
+
 #zclicker3 {
 	float:left;
     width: 50px;
@@ -147,6 +153,7 @@ table {
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
+
 #cclicker {
 	float:center;
     width: 50px;
@@ -159,6 +166,7 @@ table {
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
+
 #time_settings {
     clear: both;
 }
