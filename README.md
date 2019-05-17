@@ -57,11 +57,12 @@ Credit: [BTM_Pix](https://www.eoshd.com/comments/topic/24995-would-you-perhaps-b
 7. 	You may want to save the no-name (Cinelike D) profile as a custom Photo Style by pressing "<code>Disp.</code>" or by saving all settings to C1, C2 or C3 custom profile bank.
 8. 	To restore the original built-in video photo styles select Photo Style: <code>Standard [submit]</code> whilst in movie/video mode.
 
+Credit: [Jon Pais](https://jonpais.wordpress.com/2017/05/)
+
 | _______ |                                                    |
 |:-------:|----------------------------------------------------|
 | [1]     | May require extra/additional/different steps.      |
 | [2]     | If the response is "ok", but the Photo Style indicator doesn't vanish, the Cinelike D is not deployed, but it might be deployable by using a different procedure or different steps. |
-| Credit: | [Jon Pais](https://jonpais.wordpress.com/2017/05/) |
 
 
 
@@ -101,4 +102,4 @@ Changes since version 2.0.0 (the first version of [the previous fork](https://gi
 |  Fork:  | [Unofficial desktop Lumix Link application](https://github.com/peci1/lumix-link-desktop) (the previous fork)                                                |
 |  Other: | [LMaster](https://github.com/Rambalac/GMaster)                                                                                                              |
 | Camera: | [Panasonic Lumix LX10/LX15 settings](https://gist.github.com/auberginehill/132104749d2da304a48ebccb90571dfd)                                                |
-| Credit: | [lenuisible Control your GH3 from a Web Browser](http://www.personal-view.com/talks/discussion/6703/control-your-gh3-from-a-web-browser-now-with-video-/p1) |
+| Credit: | lenuisible [Control your GH3 from a Web Browser](http://www.personal-view.com/talks/discussion/6703/control-your-gh3-from-a-web-browser-now-with-video-/p1) |
