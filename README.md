@@ -18,7 +18,7 @@
 
 # Unofficial HTML version of the Panasonic Image App application #
 
-This is an unofficial and platform agnostic counterpart of the official [Panasonic](https://av.jpn.support.panasonic.com/support/global/cs/soft/image_app/) [Image App](https://play.google.com/store/apps/details?id=com.panasonic.avc.cng.imageapp&hl=en_GB) [mobile app](https://itunes.apple.com/us/app/panasonic-image-app/id590212732), which is partially similar to the older [Lumix Link](https://av.jpn.support.panasonic.com/support/global/cs/dsc/lumixlink/android/index.html) app. With this application, you can remotely control your Lumix camera, take pictures, record video, adjust capture settings and so on.
+This is an unofficial and platform agnostic counterpart of the official [Panasonic](https://av.jpn.support.panasonic.com/support/global/cs/soft/image_app/) [Image App](https://play.google.com/store/apps/details?id=com.panasonic.avc.cng.imageapp&hl=en_GB) [mobile app](https://itunes.apple.com/us/app/panasonic-image-app/id590212732), which is partially similar to the older [Lumix Link](https://av.jpn.support.panasonic.com/support/global/cs/dsc/lumixlink/android/index.html) app. With this application you can remotely control your Lumix camera, take pictures, record video, adjust capture settings and so on.
 
 
 
