@@ -3,9 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="requests.css">
-    <title>Lumix Link</title>
+    <title>Panasonic HTML Image App</title>
 </head>
-
 <body bgcolor="#013259" onload="onload()">
 <div id="header">
 	<script language="javascript" src="jquery.js">
@@ -57,7 +56,7 @@
 	<br />
 	<h4>Connection</h4>
 	<table>
-		<caption>Make a Connection at IP 192.168.54.1 (hard coded links)</caption>
+		<caption><span style="font-size:medium">Make a Connection at IP 192.168.54.1 (hard coded links)</span></caption>
 		<tr>
 			<td><input leftmargin="100" type="button" name="init" value="Handshake 1" onclick="window.open('http://192.168.54.1/cam.cgi?mode=accctrl&type=req_acc&value=4D454930-0100-1000-8001-020A0005A9CF&value2=DC9602%20Reader', 'results')"
 								style="background-color:#ffcc00" style="color:white; font-weight:bold" onclick>
@@ -71,7 +70,7 @@
 			<td><input leftmargin="100" type="button" name="init" value="Connect (Start OTA Session)" onclick="window.open('http://192.168.54.1/cam.cgi?mode=camcmd&value=recmode', 'results')"
 								style="background-color:#ffcc00" style="color:white; font-weight:bold" onclick>
 			</td>
-			<td><input leftmargin="100" type="button" name="init" value="LX10/LX15 UPNP Services" onclick="window.open('http://192.168.54.1:60606/CCC0792A14AF/Server0/ddd', 'results')"
+			<td><input leftmargin="100" type="button" name="init" value="LX10/LX15 UPnP Services" onclick="window.open('http://192.168.54.1:60606/CCC0792A14AF/Server0/ddd', 'results')"
 								style="background-color:#FFFFFF" style="color:white; font-weight:bold" onclick>
 			</td>
 			<td><input leftmargin="100" type="button" name="init" value="Set Device Name" onclick="window.open('http://192.168.54.1/cam.cgi?mode=setsetting&type=device_name&value=DC9602%20Reader', 'results')"
@@ -84,10 +83,12 @@
 	</table>
 	<br />
 	<table>
-		<caption>Make a Connection (IP:
-			<script type="text/javascript">
-				document.write(window.cameraIp + ")")
-			</script>
+		<caption>
+			<span style="font-size:medium">Make a Connection (IP:
+				<script type="text/javascript">
+					document.write(window.cameraIp + ")")
+				</script>
+			</span>
 		</caption>
 		<tr>
 			<td><input leftmargin="100" type="button" name="init" value="Handshake 1" onclick="window.open('http://' + window.cameraIp + '/cam.cgi?mode=accctrl&type=req_acc&value=4D454930-0100-1000-8001-020A0005A9CF&value2=DC9602%20Reader', 'results')"
@@ -102,7 +103,7 @@
 			<td><input leftmargin="100" type="button" name="init" value="Connect (Start OTA Session)" onclick="window.open('http://' + window.cameraIp + '/cam.cgi?mode=camcmd&value=recmode', 'results')"
 								style="background-color:#008000" style="color:white; font-weight:bold" onclick>
 			</td>
-			<td><input leftmargin="100" type="button" name="init" value="LX10/LX15 UPNP Services" onclick="window.open('http://' + window.cameraIp + ':60606/CCC0792A14AF/Server0/ddd', 'results')"
+			<td><input leftmargin="100" type="button" name="init" value="LX10/LX15 UPnP Services" onclick="window.open('http://' + window.cameraIp + ':60606/CCC0792A14AF/Server0/ddd', 'results')"
 								style="background-color:#FFFFFF" style="color:white; font-weight:bold" onclick>
 			</td>
 			<td><input leftmargin="100" type="button" name="init" value="Set Device Name" onclick="window.open('http://' + window.cameraIp + 'cam.cgi?mode=setsetting&type=device_name&value=DC9602%20Reader', 'results')"
@@ -1160,8 +1161,8 @@
 	</div> <!-- <div id="setsettings"> -->
 	<div id="Tutorial">
 		<br /><br />
-		<table style="width:500px; font-size:small">
-			<caption><span style="float:left">Tutorial</span></caption>
+		<table class="text" id="t_Tutorial">
+			<caption><span style="float:left">Tutorial (basic usage without streaming the Live View to the connected device)</span></caption>
   			<tbody>
 				<tr>
 					<td>1</td>
@@ -1193,7 +1194,7 @@
 				</tr>
 				<tr>
 					<td>8</td>
-					<td>Choose the SSID ID it is showing on the camera (could be >GX80-blah blah) to connect your phone or laptop to</td>
+					<td>Choose the SSID ID it is showing on the camera (could be GX80-blah blah) to connect your phone or laptop to</td>
 				</tr>
 				<tr>
 					<td>9</td>
@@ -1201,7 +1202,7 @@
 				</tr>
 				<tr>
 					<td>10</td>
-					<td>Load the html page [Control.html] into the browser of your phone	or laptop</td>
+					<td>Load the HTML-page [Control.html] into the browser of your phone or laptop</td>
 				</tr>
 				<tr>
 					<td>11</td>
@@ -1209,7 +1210,7 @@
 				</tr>
 				<tr>
 					<td>12</td>
-					<td>The browser will display 'ok,GX80-xxxxx,remote,encrypted' on the	bottom of the page (the xxxxxx will be your specific GX80 ID)</td>
+					<td>The browser will display 'ok,GX80-xxxxx,remote,encrypted' on the bottom of the page (the xxxxxx will be your specific GX80 ID)</td>
 				</tr>
 				<tr>
 					<td>13</td>
@@ -1231,14 +1232,14 @@
 			</tfoot>
 		</table>
 	</div> <!-- <div id="Tutorial"> -->
-	<div id="deploy_cinelike_d">
+	<div id="cinelike_d">
 		<br /><br />
-		<table style="width:500px; font-size:small">
-			<caption><span style="float:left">Deploy cinelike_d on Panasonic Lumix LX10 / LX15<sup><sup>[2]</sup></sup></span></caption>
+		<table class="text" id="t_cinelike_d">
+			<caption><span style="float:left">Deploy Cinelike D on Panasonic Lumix LX10 / LX15 <a href="#Footnotes"><span style="color:white"><sup><sup>[2]</sup></sup></span></a></span></caption>
   			<tbody>
 				<tr>
 					<td>1</td>
-					<td>After the previous 15 steps in "Tutorial", set the camera to manual mode (M), and confirm that some appropriate settings, such as Shutter Speed or ISO, may be set with this html-page.</td>
+					<td>After the previous 15 steps in "Tutorial", set the camera to manual mode (M), and confirm that some appropriate camera settings, such as Shutter Speed or ISO, may be set with this HTML-page.</td>
 				</tr>
 				<tr>
 					<td>2</td>
@@ -1246,7 +1247,7 @@
 				</tr>
 				<tr>
 					<td>3</td>
-					<td>Select Photo Style: cinelike_d [submit] from above.</td>
+					<td>Select Photo Style: cinelike_d [submit].</td>
 				</tr>
 				<tr>
 					<td>4</td>
@@ -1254,7 +1255,7 @@
 				</tr>
 				<tr>
 					<td>5</td>
-					<td>Cinelike D is now active on the camera.</td>
+					<td>Cinelike D is now active on the camera (if indeed the Photo Style indicator seems to be blank). <a href="#Footnotes"><span style="color:white"><sup><sup>[3]</sup></sup></span></a></td>
 				</tr>
 				<tr>
 					<td>6</td>
@@ -1266,7 +1267,7 @@
 				</tr>
 				<tr>
 					<td>8</td>
-					<td>To restore the regular built-in video photo styles select Photo Style: Standard [submit] from above whilst in movie/video mode.</td>
+					<td>To restore the original built-in video photo styles select Photo Style: Standard [submit] whilst in movie/video mode.</td>
 				</tr>
   			</tbody>
 			<tfoot>
@@ -1275,20 +1276,28 @@
 				</tr>
 			</tfoot>
 		</table>
-	</div> <!-- <div id="deploy_cinelike_d"> -->
+	</div> <!-- <div id="cinelike_d"> -->
 	<div id="www">
 		<br /><br />
-		<table style="width:500px; font-size:small">
+		<table class="text" id="t_www">
 			<caption><span style="float:left">www</span></caption>
   			<tbody>
 				<tr>
 					<td>Home:</td>
-					<td><a href="https://github.com/peci1/lumix-link-desktop">Unofficial desktop Lumix Link application</a></td>
+					<td><a href="https://github.com/auberginehill/panasonic-html-image-app">Unofficial HTML version of the Panasonic Image App application</a></td>
 				</tr>
+				<tr>
+					<td>Fork:</td>
+					<td><a href="https://github.com/peci1/lumix-link-desktop">Unofficial desktop Lumix Link application</a> (the previous fork)</td>
+				</tr>				
 				<tr>
 					<td>Other:</td>
 					<td><a href="https://github.com/Rambalac/GMaster">LMaster</a></td>
 				</tr>
+				<tr>
+					<td>Camera:</td>
+					<td><a href="https://gist.github.com/auberginehill/132104749d2da304a48ebccb90571dfd">Panasonic Lumix LX10/LX15 settings</a></td>
+				</tr>				
 				<tr>
 					<td>Credit:</td>
 					<td>lenuisible <a href="http://www.personal-view.com/talks/discussion/6703/control-your-gh3-from-a-web-browser-now-with-video-/p1">Control your GH3 from a Web Browser</a></td>
@@ -1301,7 +1310,7 @@
 	<div id="Footnotes">
 		<span style="float:left">_______________________</span>
 		<br />
-		<table style="width:500px; font-size:small">
+		<table class="text" id="t_Footnotes">
 			<tbody>
 				<tr>
 					<td><sup><sup>[1]</sup></sup></td>
@@ -1311,6 +1320,10 @@
 					<td><sup><sup>[2]</sup></sup></td>
 					<td>May require extra/additional/different steps.</td>
 				</tr>
+				<tr>
+					<td><sup><sup>[2]</sup></sup></td>
+					<td>If the response is "ok", but the Photo Style indicator doesn't vanish, the Cinelike D is not deployed, but it might be deployable by using a different procedure or different steps.</td>
+				</tr>				
   			</tbody>
 			<tfoot>
 			</tfoot>
@@ -1596,7 +1609,7 @@
 	<p><a href="http://192.168.54.1/cam.cgi?mode=setsetting&type=mot_conv&value=mp4_25p_20mbps/1250/normal">setsetting_mot_conv_mp4_25p_20mbps/1250/normal</a></p>
 	<p><a href="http://192.168.54.1/cam.cgi?mode=setsetting&type=mot_conv&value=mp4_30p_100mbps_4k/3000/normal">setsetting_mot_conv_mp4_30p_100mbps_4k/3000/normal</a></p>
 	<p><a href="http://192.168.54.1/cam.cgi?mode=setsetting&type=mot_conv&value=mp4_60p_28mbps/6000/reverse">setsetting_mot_conv_mp4_60p_28mbps/6000/reverse</a></p>
-	<p><a href="http://192.168.54.1/cam.cgi?mode=camctrl&type=mot_conv&value=query_time	">mot_conv_query_time</a></p>
+	<p><a href="http://192.168.54.1/cam.cgi?mode=camctrl&type=mot_conv&value=query_time">mot_conv_query_time</a></p>
 	<p><a href="http://192.168.54.1/cam.cgi?mode=camctrl&type=mot_conv&value=start">mot_conv_start</a></p>
 	<p><a href="http://192.168.54.1/cam.cgi?mode=getprogress&type=mot_conv">getprogress_mot_conv</a></p>
 	<p><a href="http://192.168.54.1/cam.cgi?mode=setsetting&type=play_sort_mode&value=date">play_sort_mode</a></p>
